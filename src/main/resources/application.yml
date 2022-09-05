@@ -1,0 +1,28 @@
+server:
+  port: 8888
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    # jdbc:mysql://localhost:3306/tp_music?characterEncoding=utf-8&serverTimezone=UTC
+    url: jdbc:mysql://localhost:3306/tp_music?serverTimezone=Asia/Shanghai
+    username: root
+    password: 1234
+
+  #热部署生效
+  devtools:
+    restart:
+      enabled: true
+      additional-paths: src/main/java #设置重启的目录
+      exclude: WEB-INF/** #classpath目录下的WEB-INF文件夹内容修改不重启
+
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+
+mybatis:
+  typeAliasesPackage: com.example.yin.domain
+  mapperLocations: classpath:mapper/*.xml
+
+# 关闭CONDITIONS EVALUATION REPORT及自动配置内容向控制台的输出
+logging.level.org.springframework.boot.autoconfigure: error
