@@ -26,6 +26,9 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
+/***
+ * 消费者
+ */
 @RestController
 public class ConsumerController {
 

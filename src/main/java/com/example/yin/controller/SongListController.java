@@ -37,7 +37,7 @@ public class SongListController {
 
     // 添加歌单
     @ResponseBody
-    @RequestMapping(value = "/songList/add", method = RequestMethod.POST)
+    @PostMapping("/songList/add")
     public Object addSongList(HttpServletRequest req) {
         String title = req.getParameter("title").trim();
         String introduction = req.getParameter("introduction").trim();
@@ -59,7 +59,7 @@ public class SongListController {
     }
 
     // 删除歌单
-    @RequestMapping(value = "/songList/delete", method = RequestMethod.GET)
+    @GetMapping("/songList/delete")
     public Object deleteSongList(HttpServletRequest req) {
         String id = req.getParameter("id");
 
@@ -72,13 +72,13 @@ public class SongListController {
     }
 
     // 返回所有歌单
-    @RequestMapping(value = "/songList", method = RequestMethod.GET)
+    @GetMapping("/songList")
     public Object allSongList() {
         return new SuccessMessage<List<SongList>>(null, songListService.allSongList()).getMessage();
     }
 
     // 返回标题包含文字的歌单
-    @RequestMapping(value = "/songList/likeTitle/detail", method = RequestMethod.GET)
+    @GetMapping("/songList/likeTitle/detail")
     public Object songListOfLikeTitle(HttpServletRequest req) {
         String title = req.getParameter("title").trim();
 
@@ -86,7 +86,7 @@ public class SongListController {
     }
 
     // 返回指定类型的歌单
-    @RequestMapping(value = "/songList/style/detail", method = RequestMethod.GET)
+    @GetMapping("/songList/style/detail")
     public Object songListOfStyle(HttpServletRequest req) {
         String style = req.getParameter("style").trim();
 
@@ -95,7 +95,7 @@ public class SongListController {
 
     // 更新歌单信息
     @ResponseBody
-    @RequestMapping(value = "/songList/update", method = RequestMethod.POST)
+    @PostMapping("/songList/update")
     public Object updateSongListMsg(HttpServletRequest req) {
         String id = req.getParameter("id").trim();
         String title = req.getParameter("title").trim();
