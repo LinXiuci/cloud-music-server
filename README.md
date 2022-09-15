@@ -1,14 +1,13 @@
 # cloud-music-client
+
 云音乐客户端
 
 ## 说明
 
-  《云音乐》项目于2022年5月18号完成（还是有一点的小bug），大概耗时两三月余。此项目的客户端与后台管理都是采用 <a href="https://staging-cn.vuejs.org/">Vue3</a> 框架来实现，服务端则采用 Java + Spring Boot@2.6 + Mybatis 来实现，数据库是使用了 MySQL。
-  
-  注：
-     1. 后端的技术语言都是边学边写的（主要是看别人写的技术博客），<a href="https://www.javaboy.org/springboot/">博客链接</a>。
-     2. 目前已经采用 React Hook 框架开发该项目。
-  
+《云音乐》项目于 2022 年 5 月 18 号完成（还是有一点的小 bug），大概耗时两三月余。此项目的客户端与后台管理都是采用 <a href="https://staging-cn.vuejs.org/">Vue3</a> 框架来实现，服务端则采用 Java + Spring Boot@2.6 + Mybatis 来实现，数据库是使用了 MySQL。
+
+注： 1. 后端的技术语言都是边学边写的（主要是看别人写的技术博客），<a href="https://www.javaboy.org/springboot/">博客链接</a>。 2. 目前已经采用 React Hook 框架开发该项目。
+
 ## 技术栈
 
 1. 客户端与后台管理
@@ -27,7 +26,6 @@ Java + Spring Boot@2.6 + MyBatis + MySQL+图形化界面 Navicat
 
 3. 云音乐服务端: https://github.com/LinXiuci/cloud-music-server
 
-
 ## 开发环境
 
 1. JDK： jdk11
@@ -37,49 +35,43 @@ Java + Spring Boot@2.6 + MyBatis + MySQL+图形化界面 Navicat
 
 ## 图片展示
 
-
 ### 客户端：
-![](https://cdn.jsdelivr.net/gh/LinXiuci/image/img/m2.png)<br/>
 
-![](https://cdn.jsdelivr.net/gh/LinXiuci/image/img/m1.png)<br/>
+![](https://raw.githubusercontent.com/LinXiuci/image/main/img/m1.png)<br/>
 
-![](https://cdn.jsdelivr.net/gh/LinXiuci/image/img/m5.png)<br/>
+![](https://raw.githubusercontent.com/LinXiuci/image/main/img/m2.png)<br/>
 
-![](https://cdn.jsdelivr.net/gh/LinXiuci/image/img/m3.png)<br/>
+![](https://raw.githubusercontent.com/LinXiuci/image/main/img/m3.png)<br/>
 
-![](https://cdn.jsdelivr.net/gh/LinXiuci/image/img/m4.png)<br/>
+![](https://raw.githubusercontent.com/LinXiuci/image/main/img/m4.png)<br/>
 
-![](https://cdn.jsdelivr.net/gh/LinXiuci/image/img/m6.pngg)<br/>
+![](https://raw.githubusercontent.com/LinXiuci/image/main/img/m5.png)<br/>
 
-![](https://cdn.jsdelivr.net/gh/LinXiuci/image/img/m7.png)<br/>
+![](https://raw.githubusercontent.com/LinXiuci/image/main/img/m6.png)<br/>
 
-![](https://cdn.jsdelivr.net/gh/LinXiuci/image/img/m8.png)<br/>
+![](https://raw.githubusercontent.com/LinXiuci/image/main/img/m7.png)<br/>
 
-![](https://cdn.jsdelivr.net/gh/LinXiuci/image/img/m9.png)<br/>
+![](https://raw.githubusercontent.com/LinXiuci/image/main/img/m10.png)<br/>
 
-![](https://cdn.jsdelivr.net/gh/LinXiuci/image/img/m11.png)<br/>
+![](https://raw.githubusercontent.com/LinXiuci/image/main/img/m8.png)<br/>
 
-![](https://cdn.jsdelivr.net/gh/LinXiuci/image/img/m10.png)<br/>
-
-
+![](https://raw.githubusercontent.com/LinXiuci/image/main/img/m11.png)<br/>
 
 ### 后台管理
 
-![](https://cdn.jsdelivr.net/gh/LinXiuci/image/img/pc4.png)<br/>
+![](https://raw.githubusercontent.com/LinXiuci/image/main/img/pc4.png)<br/>
 
-![](https://cdn.jsdelivr.net/gh/LinXiuci/image/img/pc1.png)<br/>
+![](https://raw.githubusercontent.com/LinXiuci/image/main/img/pc1.png)<br/>
 
-![](https://cdn.jsdelivr.net/gh/LinXiuci/image/img/pc3.png)<br/>
+![](https://raw.githubusercontent.com/LinXiuci/image/main/img/pc2.png)<br/>
 
-![](https://cdn.jsdelivr.net/gh/LinXiuci/image/img/pc2.png)<br/>
+![](https://raw.githubusercontent.com/LinXiuci/image/main/img/pc3.png)<br/>
 
-![](https://cdn.jsdelivr.net/gh/LinXiuci/image/img/pc7.png)<br/>
+![](https://raw.githubusercontent.com/LinXiuci/image/main/img/pc5.png)<br/>
 
-![](https://cdn.jsdelivr.net/gh/LinXiuci/image/img/pc6.png)<br/>
+![](https://raw.githubusercontent.com/LinXiuci/image/main/img/pc7.png)<br/>
 
-![](https://cdn.jsdelivr.net/gh/LinXiuci/image/img/pc5.png)<br/>
-
-
+![](https://raw.githubusercontent.com/LinXiuci/image/main/img/pc6.png)<br/>
 
 ## 项目功能
 
@@ -110,6 +102,7 @@ Java + Spring Boot@2.6 + MyBatis + MySQL+图形化界面 Navicat
 4. 启动项目
 
 . 在 music-server 中，运行下面命令启动服务器
+
 ```
 // 方法一
 ./mvnw spring-boot:run
@@ -132,5 +125,3 @@ or
 yarn
 yarn serve
 ```
-
-
